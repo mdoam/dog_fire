@@ -1,0 +1,18 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 8  0 0 0  0 1 0
+
+Texture2D  5	cute1.bmp
+
+Vertex          fire.vert
+Fragment        fire.frag
+Program    Fire                                     \
+                TexUnitA 5				             \
+                iTime <0. 0.1 20.>                   \
+                uKa <0. 0.1 1.0>                     \
+                uBlend <0. 0. 1.>                    \
+                uGreen <false>                       \
+                uBlue <false>
+
+QuadXY  0  1.  1024.

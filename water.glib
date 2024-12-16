@@ -1,0 +1,29 @@
+##OpenGL GLIB
+
+Perspective 70
+LookAt 0 0 8  0 0 0  0 1 0
+
+Texture2D  5	cute1.bmp
+
+Vertex          water.vert
+Fragment        water.frag
+Program    Water                                 \
+                uA <0.0 0.00 1.0>               \
+                uB <0.1 0.6 3.0>                \
+                uC <0. 0. 6.28>                 \
+                uD <0. 0. 2.>                   \
+                TexUnitA 5				        \
+                uBlend <0. 0. 1.>                    \
+                uNoiseAmp <0. 0. 25.>            \
+                uDistortionS <0 0. 1>           \
+                uKa <0. 0.1 1.0>                \
+                uKd <0. 0.6 1.0>                \
+                uKs <0. 0.3 1.0>                \
+                uShininess <3. 10. 1000.>       \
+                uLightX <-20. 5. 20.>           \
+                uLightY <-20. 10. 20.>          \
+                uLightZ <-20. 20. 20.>          \
+                uColor {1. .7 0. 1.}            \
+                uSpecularColor {1. 1. 1. 1.}
+
+QuadXY  -0.2  1.  100 100
